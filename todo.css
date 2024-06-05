@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #7972ed;
+    background-color: #f4f4f4;
 }
 
 .kanban-board {
@@ -14,7 +14,7 @@ body {
 }
 
 .column {
-    background-color: #e1b1b1;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -48,9 +48,14 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
-#new-task {
+.task span {
+    display: block;
+}
+
+#new-task, #due-date {
     width: calc(100% - 22px);
     padding: 5px;
     margin-top: 10px;
@@ -70,8 +75,23 @@ button:hover {
     background-color: #218838;
 }
 
+.delete-btn {
+    background-color: #dc3545;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
 .status {
     font-size: 0.8em;
     color: #555;
-    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.due-date {
+    font-size: 0.8em;
+    color: #ff0000;
+    margin-top: 5px;
 }

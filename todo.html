@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>Kanban Board</title>
     <link rel="stylesheet" href="todo.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
             <h2>Tasks</h2>
             <div class="task-container" id="tasks-container"></div>
             <input type="text" id="new-task" placeholder="Add new task">
+            <input type="date" id="due-date" placeholder="Due date">
             <button onclick="addTask()">Add Task</button>
         </div>
         <div class="column" id="active">
@@ -21,6 +22,7 @@
         <div class="column" id="resolved">
             <h2>Resolved</h2>
             <div class="task-container" id="resolved-container"></div>
+            <button onclick="clearResolvedTasks()">Clear All</button>
         </div>
     </div>
 
