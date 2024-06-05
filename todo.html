@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="column" id="tasks">
+            <h2>Tasks</h2>
+            <div class="task-container" id="tasks-container"></div>
+            <input type="text" id="new-task" placeholder="Add new task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="column" id="active">
+            <h2>Active</h2>
+            <div class="task-container" id="active-container"></div>
+        </div>
+        <div class="column" id="resolved">
+            <h2>Resolved</h2>
+            <div class="task-container" id="resolved-container"></div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
