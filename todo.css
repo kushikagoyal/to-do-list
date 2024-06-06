@@ -5,7 +5,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-image: radial-gradient(
+        circle farthest-corner at -4.5% 34.3%,
+        rgba(223, 94, 132, 1) 0%,
+        rgba(99, 60, 148, 1) 90%
+    );
 }
 
 .kanban-board {
@@ -14,7 +18,7 @@ body {
 }
 
 .column {
-    background-color: #fff;
+    background-color: #ffff;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -33,14 +37,16 @@ h2 {
     flex-grow: 1;
     width: 100%;
     min-height: 200px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffff;
+    box-shadow: black;
     border-radius: 5px;
     padding: 10px;
-    background-color: #fafafa;
+    background-color: #ffff;
 }
 
 .task {
-    background-color: #e2e2e2;
+    background-color: #ede8f8;
+    box-shadow: black;
     border-radius: 3px;
     padding: 5px;
     margin-bottom: 5px;
