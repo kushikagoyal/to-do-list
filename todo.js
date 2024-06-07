@@ -88,7 +88,6 @@ function loadTasksFromLocalStorage() {
     if (active) document.getElementById('active-container').innerHTML = active;
     if (resolved) document.getElementById('resolved-container').innerHTML = resolved;
 
-    // Re-attach event listeners to tasks after loading from local storage
     document.querySelectorAll('.task').forEach(task => {
         task.ondragstart = (e) => {
             e.dataTransfer.setData('text', task.id);
